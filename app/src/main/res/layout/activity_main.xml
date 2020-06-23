@@ -21,10 +21,9 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/pixel_google"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/TextContent.Small.White"
                 android:layout_gravity="bottom"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="#4d000000"
                 android:drawableLeft="@drawable/ic_collections_white_18dp"
@@ -38,20 +37,14 @@
         </FrameLayout>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextContent.Black"
             android:textSize="32sp"
             android:text="$735"
-            android:layout_margin="16dp"
-            android:layout_marginBottom="8dp"
             android:textColor="@android:color/black"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextContent.Subtitle"
             android:text="Stock hanya 5 buah"
-            android:textSize="12sp"
-            android:layout_margin="16dp"
-            android:layout_marginTop="0dp"/>
+            android:textSize="12sp" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,8 +54,7 @@
             android:lineSpacingMultiplier="1"
             android:textColor="@android:color/black"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextContent"
             android:text="Spesifikasi"
             android:textSize="12sp"
             android:layout_margin="16dp"
@@ -128,6 +120,28 @@
                     android:textColor="@android:color/black"/>
             </TableRow>
         </TableLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/photo_2"/>
+            <TextView
+                style="@style/TextContent"
+                android:layout_toEndOf="@id/profile_image"
+                android:layout_toRightOf="@id/profile_image"
+                android:text="@string/my_name"
+                android:paddingTop="28dp"
+                android:paddingBottom="28dp"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
